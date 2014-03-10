@@ -1,0 +1,255 @@
+<!-- ***************************************************
+********************************************************
+
+HOW TO USE: Use these code examples as a guideline for formatting your HTML email. You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s). There are two main areas in the template: 1. The header (head) area of the document. You will find global styles, where indicated, to move inline. 2. The body section contains more specific fixes and guidance to use where needed in your design.
+
+DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
+
+It is important to note that sometimes the styles in the header area should not be or don't need to be brought inline. Those instances will be marked accordingly in the comments.
+
+********************************************************
+**************************************************** -->
+
+<!-- Using the xHTML doctype is a good practice when sending HTML email. While not the only doctype you can use, it seems to have the least inconsistencies. For more information on which one may work best for you, check out the resources below.
+
+UPDATED: Now using xHTML strict based on the fact that gmail and hotmail uses it.  Find out more about that, and another great boilerplate, here: http://www.emailology.org/#1
+
+More info/Reference on doctypes in email:
+Campaign Monitor - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
+Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Последние новости</title>
+	
+
+<style type="text/css">
+body {
+width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;
+}
+a:visited {
+color: ##85E8BA;
+}
+</style>
+</head>
+<body style="width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;">
+	<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+	<table cellpadding="0" cellspacing="0" border="0" bgcolor="DCFAFA" id="wrapper" style="width: 100% !important; line-height: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0;">
+		<tr>
+			<td>
+				<!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in 		most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space 	effectively in 	your message. -->
+				<table id="top-message" cellpadding="0" cellspacing="0" width="600" border="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					<tr>
+						<td align="center">
+            				<p style="color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Не имеющая смысла хвалебная первая строка для всплывающих сообщений. <br />
+            				Проблемы с просмотром этого сообщения? <a href="https://github.com/elzadj" target="_blank" title="Прочитать письмо на сайте" style="color: #007997; text-decoration: none;">Открыть в браузере</a></p>
+       					</td>
+					</tr>
+				</table> <!-- /top-message -->
+
+				<table id="main" cellpadding="0" cellspacing="15" bgcolor="ffffff" width="600" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					<tr>
+    					<td>
+        					<table id="header" cellpadding="10" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+        					    <tr>
+        					        <td width="570" bgcolor="007997"><p style="color: #ffffff; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif; font-size: 12px;" /><h1 style="color: #ffffff !important; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif; font-size: 24px; margin: 0 0 0.8em;">Рога и копыта Ltd.</h1></p></td>
+        					    </tr>
+        					    <tr>
+        					        <td width="570" align="right" bgcolor="5EAFA9"><p style="color: #ffffff; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif; font-size: 12px;">Март 2014</p></td>
+        					    </tr>
+        					</table><!-- header -->
+    					</td>
+					</tr><!-- header -->
+				
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td>
+					        <table id="content-1" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr>
+					                <td width="170" valign="top">
+					                    <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					                        <tr>
+					                            <td bgcolor="DCFAFA"><img class="image_fix" moz-do-not-send="true" src="http://lorempixel.com/170/120" alt="Новый крутой апдейт" title="Новый крутой апдейт" width="170" height="120" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					                        </tr>
+					                    </table>
+					                </td>
+					                <td width="15"></td>
+					                <td width="375" colspan="3">
+					                    <h3 style="font-size: 28px; color: #004983; font-family: Arial, Helvetica, sans-serif; margin: 0 0 0.8em;">Новый крутой апдейт</h3>
+					                    <h4 style="font-size: 22px; color: #35AFA9; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">Теперь на 146% эффективнее!</h4>
+					                </td>
+					            </tr>
+					        </table><!-- content 1 -->
+					    </td>
+					</tr><!-- content 1 -->
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;" /><tr>
+					    <td>
+					        <table id="content-2" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr>
+					                <td width="570"><p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td>
+					            </tr>
+					        </table><!-- content-2 -->
+					    </td>
+					</tr>
+					<tr>
+					    <td height="15"></td>
+					</tr><!-- content-2 -->
+					</p>
+					<tr>
+					    <td height="10" align="center"><img class="image_fix" moz-do-not-send="true" src="http://placehold.it/570x10/DCFAFA/fff" alt="Разделитель" title="Разделитель" width="570" height="10" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					</tr>
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td>
+					        <table id="content-3" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr>
+					                <td width="180" valign="top">
+					                    <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					                        <tr>
+					                            <td bgcolor="DCFAFA"><img class="image_fix" moz-do-not-send="true" src="http://lorempixel.com/170/120/cats" alt="Котуха" title="Ништяки" width="170" height="120" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					                        </tr>
+					                        <tr>
+					                            <td height="15"></td>
+					                        </tr>
+					                    </table>
+					                </td>
+					                <td width="15"></td>
+					                <td width="180" valign="top">
+					                    <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					                        <tr>
+					                            <td bgcolor="DCFAFA"><img class="image_fix" moz-do-not-send="true" src="http://lorempixel.com/170/120/nature" alt="Природа" title="Долбаное ничего" width="170" height="120" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					                        </tr>
+					                        <tr>
+					                            <td height="15"></td>
+					                        </tr>
+					                    </table>
+					                </td>
+					                <td width="15"></td>
+					                <td width="180" valign="top">
+					                    <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					                        <tr>
+					                            <td bgcolor="DCFAFA"><img class="image_fix" moz-do-not-send="true" src="http://lorempixel.com/170/120/city" alt="Город" title="Скидки!" width="170" height="120" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					                        </tr>
+					                        <tr>
+					                            <td height="15"></td>
+					                        </tr>
+					                    </table>
+					                </td>
+					            </tr>
+					        </table><!-- content-3 -->
+					    </td>
+					</tr><!-- content-3 -->
+					<tr>
+					    <td>
+					        <table id="content-4" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr>
+					                <td width="180" valign="top">
+					                    <h5 style="font-size: 18px; color: #444444; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">Очередные ништяки для вас!</h5>
+					                    <p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					                </td>
+					                <td width="15"></td>
+					                <td width="180" valign="top">
+					                    <h5 style="font-size: 18px; color: #444444; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">Долбаное ничего в подарок!</h5>
+					                    <p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					                        deserunt mollit anim id est laborum.</p>
+					                </td>
+					                <td width="15"></td>
+					                <td width="180" valign="top">
+					                    <h5 style="font-size: 18px; color: #444444; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">Весенняя скидка 0.000001%!</h5>
+					                    <p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					                </td>
+					            </tr>
+					        </table><!-- content-4 -->
+					    </td>
+					</tr><!-- content-4 -->
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td height="10" align="center"><img class="image_fix" moz-do-not-send="true" src="http://placehold.it/570x10/DCFAFA/fff" alt="Разделитель" title="Разделитель" width="570" height="10" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					</tr>
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td>
+					        <table id="content-5" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr>
+					                <td width="267" valign="top">
+					                    <table cellpadding="5" cellspacing="0" bgcolor="DCFAFA" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td>
+					                        <img class="image_fix" moz-do-not-send="true" src="http://lorempixel.com/267/200" alt="Аттеншон" title="Аттеншон!" width="267" height="200" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" />
+					                    </td></tr></table>
+					                </td>
+					                <td width="15"></td>
+					                <td width="278" >
+					                    <h4 style="font-size: 22px; color: #35AFA9; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">Что-то важное</h4>
+					                    <p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					                </td>
+					            </tr>
+					        </table><!-- content-5 -->
+					    </td>
+					</tr><!-- content-5 -->
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td height="10" align="center"><img class="image_fix" moz-do-not-send="true" src="http://placehold.it/570x10/DCFAFA/fff" alt="Разделитель" title="Разделитель" width="570" height="10" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block;" /></td>
+					</tr>
+					<tr>
+					    <td height="15"></td>
+					</tr>
+					<tr>
+					    <td>
+					        <table id="content-6" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					            <tr><td width="560" align="center"><p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					            <p style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;">Позвоните нам!</p>
+					            <p class="mobile_link" style="font-size: 12px; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;" /><h4 style="font-size: 22px; color: #35AFA9; font-family: Arial, Helvetica, sans-serif; line-height: 1.2 !important; margin: 0 0 0.8em;">123-456-7890</h4></p></td></tr>
+					        </table>
+					    </td>
+					</tr>
+				</table><!-- /main -->
+				
+				<table id="bottom-message" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					<tr>
+						<td align="right" width="150">
+							<p style="color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Перейти на <a href="https://github.com/elzadj" target="_blank" title="Перейти на сайт" style="color: #007997; text-decoration: none;">сайт</a></p>
+						</td>
+						<td align="center" width="10" >&#124;</td>
+       					<td align="center" width="50"> 
+            				<p style="color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><a href="https://github.com/elzadj" target="_blank" title="О нас" style="color: #007997; text-decoration: none;">О нас</a></p>
+       					</td>
+       					<td align="center" width="10">&#124;</td>
+       					<td align="left" width="150">
+       						<p style="color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><a href="https://github.com/elzadj" target="_blank" title="Перейти на сайт и отписаться" style="color: #007997; text-decoration: none;">Отписаться</a> от рассылки </p>
+       					</td>
+    				</tr> 
+				</table><!-- /bottom message -->	
+			</td>
+		</tr>
+	</table><!-- /wrapper -->
+
+		
+</body>
+</html>
